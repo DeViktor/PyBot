@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-bot = commands.Bot("4!")
+bot = commands.Bot("%")
 
 @bot.event
 async def on_ready():
@@ -19,4 +19,10 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-bot.run("")
+@bot.command(name= "nlw")
+async def cmd(ctx):
+    response = "vem ai NLW HEAT dia 17 fml vamo q vamo"
+    
+    await ctx.send(response)
+
+bot.run("YOUR BOT TOKEN HERE")
