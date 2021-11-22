@@ -5,7 +5,7 @@ bot = commands.Bot("%")
 
 @bot.event
 async def on_ready():
-    print(f"I'm Ready now For Working, Connected by discord bot: {bot.user}")
+    print(f"I'm Ready now For Working, Connected by discord bot {bot.user}")
 
 @bot.event
 async def on_message(message):
